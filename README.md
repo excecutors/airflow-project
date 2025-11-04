@@ -45,19 +45,21 @@ The pipeline leverages **parallelism** through Airflow’s TaskGroups for concur
 ```
 .
 ├── dags/
-│   └── pipeline.py
+│   └── pipeline.py                  # Main Airflow DAG definition
 ├── data/
-│   ├── raw/
-│   ├── stage/
-│   └── reports/avg_salary_by_sector.png
+│   ├── raw/                         # Raw input data before transformation
+│   ├── stage/                       # Intermediate processed data
+│   └── reports/                     # Final outputs and plots
+│       └── avg_salary_by_sector.png # Example visualization result
 ├── screenshots/
-│   ├── Airflow-DAG-Page.png
-│   ├── Graph-view.png
-│   └── output-visualization.png
-├── docker-compose.yml
-├── .env
-├── requirements.txt
-└── README.md
+│   ├── Airflow-DAG-Page.png         # Screenshot of DAGs list in Airflow UI
+│   ├── Graph-view.png               # DAG Graph View showing dependencies
+│   └── output-visualization.png     # Final analytical output (e.g., visualization)
+├── docker-compose.yml               # Defines Airflow, Postgres, and supporting services
+├── .env                             # Environment variables for Airflow/Postgres
+├── requirements.txt                 # Python dependencies for Airflow DAGs
+└── README.md                        # Project documentation
+
 ```
 
 ---
