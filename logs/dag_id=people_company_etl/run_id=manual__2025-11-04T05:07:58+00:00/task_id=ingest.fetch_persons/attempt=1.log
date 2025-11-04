@@ -1,0 +1,18 @@
+[2025-11-04T05:08:34.930+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-04T05:08:35.104+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: people_company_etl.ingest.fetch_persons manual__2025-11-04T05:07:58+00:00 [queued]>
+[2025-11-04T05:08:35.121+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: people_company_etl.ingest.fetch_persons manual__2025-11-04T05:07:58+00:00 [queued]>
+[2025-11-04T05:08:35.122+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-11-04T05:08:35.170+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): ingest.fetch_persons> on 2025-11-04 05:07:58+00:00
+[2025-11-04T05:08:35.181+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'people_company_etl', 'ingest.fetch_persons', 'manual__2025-11-04T05:07:58+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp3bon9t14']
+[2025-11-04T05:08:35.187+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=298) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-04T05:08:35.188+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask ingest.fetch_persons
+[2025-11-04T05:08:35.188+0000] {standard_task_runner.py:63} INFO - Started process 307 to run task
+[2025-11-04T05:08:35.411+0000] {task_command.py:426} INFO - Running <TaskInstance: people_company_etl.ingest.fetch_persons manual__2025-11-04T05:07:58+00:00 [running]> on host 573d80711400
+[2025-11-04T05:08:35.631+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='freddy' AIRFLOW_CTX_DAG_ID='people_company_etl' AIRFLOW_CTX_TASK_ID='ingest.fetch_persons' AIRFLOW_CTX_EXECUTION_DATE='2025-11-04T05:07:58+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-04T05:07:58+00:00'
+[2025-11-04T05:08:35.634+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-04T05:08:35.858+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/raw/persons.csv
+[2025-11-04T05:08:35.865+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-04T05:08:35.899+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=people_company_etl, task_id=ingest.fetch_persons, run_id=manual__2025-11-04T05:07:58+00:00, execution_date=20251104T050758, start_date=20251104T050835, end_date=20251104T050835
+[2025-11-04T05:08:35.959+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-11-04T05:08:36.025+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-04T05:08:36.027+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
