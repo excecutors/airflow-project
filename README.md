@@ -131,6 +131,4 @@ You’ll see the DAG named **`people_company_etl`**. It’s scheduled to run dai
 
 **Author:** Freddy Platinus
 
-**Course:** Duke University – IDS 706: Data Engineering Systems
-
 **Date:** November 2025
