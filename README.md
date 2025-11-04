@@ -1,6 +1,6 @@
 # Airflow Homework: People-Company ETL Pipeline
 
-This project demonstrates an **end-to-end ETL pipeline orchestrated with Apache Airflow**, built as part of the IDS 706 Data Engineering coursework. The pipeline automatically **ingests, transforms, merges, and analyzes** two related datasets — companies and employees — while showcasing **parallel task execution**, **PostgreSQL integration**, and **automated cleanup** within a containerized Airflow environment.
+This project demonstrates an **end-to-end ETL pipeline orchestrated with Apache Airflow**, built as part of the IDS 706 Data Engineering coursework. The pipeline automatically **ingests, transforms, merges, and analyzes** two related datasets (companies and employees) while showcasing **parallel task execution**, **PostgreSQL integration**, and **automated cleanup** within a containerized Airflow environment.
 
 ---
 
@@ -36,7 +36,7 @@ The goal of this pipeline is to simulate a real-world data workflow that connect
 * **Visualization:** Matplotlib
 * **Containerization:** Docker Compose (webserver, scheduler, Postgres)
 
-The pipeline leverages **parallelism** through Airflow’s TaskGroups for concurrent ingestion and transformation. Tasks communicate only via **file paths (XCom)** — not large datasets — to follow best practices in distributed data workflows.
+The pipeline leverages **parallelism** through Airflow’s TaskGroups for concurrent ingestion and transformation. Tasks communicate only via **file paths (XCom)** (not large datasets) to follow best practices in distributed data workflows.
 
 ---
 
@@ -130,5 +130,7 @@ You’ll see the DAG named **`people_company_etl`**. It’s scheduled to run dai
 ---
 
 **Author:** Freddy Platinus
+
 **Course:** Duke University – IDS 706: Data Engineering Systems
+
 **Date:** November 2025
