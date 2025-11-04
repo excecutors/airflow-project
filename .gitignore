@@ -1,0 +1,13 @@
+# Ignore environment and config secrets
+.env
+.env.*
+*.env
+
+# Ignore Airflow logs and metadata
+logs/
+data/raw/
+data/stage/
+
+# Ignore Python caches
+__pycache__/
+*.pyc
