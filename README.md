@@ -51,9 +51,9 @@ The pipeline leverages **parallelism** through Airflow’s TaskGroups for concur
 │   ├── stage/
 │   └── reports/avg_salary_by_sector.png
 ├── screenshots/
-│   ├── dags_home.png
-│   ├── graph_view.png
-│   └── output_plot.png
+│   ├── Airflow-DAG-Page.png
+│   ├── Graph-view.png
+│   └── output-visualization.png
 ├── docker-compose.yml
 ├── .env
 ├── requirements.txt
