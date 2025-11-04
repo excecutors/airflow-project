@@ -1,13 +1,53 @@
-# Ignore environment and config secrets
-.env
-.env.*
-*.env
+# -------------------------
+# Airflow + Docker + Python
+# -------------------------
 
-# Ignore Airflow logs and metadata
+# Environment and credentials
+.env
+*.env
+.env.*
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+*.sqlite
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Logs and temporary data
 logs/
+*.log
+*.out
+*.err
+
+# Airflow logs and dags history
+airflow_logs/
+dags/__pycache__/
+plugins/__pycache__/
+
+# Docker volumes, local data, tmp dirs
 data/raw/
 data/stage/
+data/*.csv
+*.db
+*.sqlite3
 
-# Ignore Python caches
-__pycache__/
-*.pyc
+# Reports and generated images (optional, if you already have screenshots separately)
+data/reports/*.png
+
+# VSCode, devcontainer, OS-specific junk
+.vscode/
+.devcontainer/
+.DS_Store
+Thumbs.db
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
