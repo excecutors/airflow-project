@@ -1,6 +1,6 @@
 # Airflow Homework: People-Company ETL Pipeline
 
-This project demonstrates an **end-to-end ETL pipeline orchestrated with Apache Airflow**, built as part of the IDS 706 Data Engineering coursework. The pipeline automatically **ingests, transforms, merges, and analyzes** two related datasets (companies and employees) while showcasing **parallel task execution**, **PostgreSQL integration**, and **automated cleanup** within a containerized Airflow environment.
+This project demonstrates an **end-to-end ETL pipeline orchestrated with Apache Airflow**. The pipeline automatically **ingests, transforms, merges, and analyzes** two related datasets (companies and employees) while showcasing **parallel task execution**, **PostgreSQL integration**, and **automated cleanup** within a containerized Airflow environment.
 
 ---
 
